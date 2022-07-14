@@ -1128,6 +1128,11 @@ func makeSetupConnectionConfigFunc_js() string {
                         a = parent.frames["top_frame"].document.getElementById("vmmgmtHref");
                         a.href = "vmmgmt/" + configName
 
+                        // for nlb 
+                        a = parent.frames["top_frame"].document.getElementById("nlbHref");
+                        a.href = "nlb/" + configName
+                        a = parent.frames["top_frame"].document.getElementById("nlbmgmtHref");
+                        a.href = "nlbmgmt/" + configName
 
 		    // for VMImage
 		    a = parent.frames["top_frame"].document.getElementById("vmimageHref");
@@ -1523,10 +1528,10 @@ func SpiderInfo(c echo.Context) error {
                                             <font size=2>$$STARTTIME$$</font>
                                     </td>
                                     <td width="220">
-                                            <font size=2>CB-Spider v0.5.0 (Affogato)</font>
+                                            <font size=2>CB-Spider v0.6.0 (Cafe Latte)</font>
                                     </td>
                                     <td width="220">
-                                            <font size=2>REST API v0.5.0 (Affogato)</font>
+                                            <font size=2>REST API v0.6.0 (Cafe Latte)</font>
                                     </td>
                                 </tr>
 
